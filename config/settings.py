@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'mptt',
     'drf_yasg',
     'profiles',
+    'wall',
+    'comments',
+    'followers',
+    'feed',
 ]
 
 MIDDLEWARE = [
