@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-
+from message import views
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -27,4 +27,9 @@ urlpatterns = [
     path('feed/', include('feed.urls')),
     path('follower/', include('followers.urls')),
     path('', include('profiles.urls')),
+    path('message/', include([
+        path('create/', (views.CreateDialogView.as_view()), name='create_dialog'),
+        path('<chat_id>/', (views.MessagesView.as_view()), name='messages'),
+    ])),
 ]
+
