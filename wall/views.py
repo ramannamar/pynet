@@ -1,6 +1,6 @@
 from rest_framework import permissions, generics
-from Pynet.base.classes import CreateUpdateDestroy, CreateRetrieveUpdateDestroy
-from Pynet.base.permissions import IsAuthor
+from basse.classes import CreateUpdateDestroy, CreateRetrieveUpdateDestroy
+from basse.permissions import IsAuthor
 from .models import Post, Comment
 from .serializers import (PostSerializer, ListPostSerializer, CreateCommentSerializer)
 
