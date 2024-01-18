@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from Pynet.profiles.serializers import UserByFollowerSerializer
+from profiles.serializers import UserByFollowerSerializer
 from .models import Follower
 
 

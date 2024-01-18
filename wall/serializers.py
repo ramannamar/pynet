@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from base.serializers import RecursiveSerializer, FilterCommentListSerializer
+from basse.serializers import RecursiveSerializer, FilterCommentListSerializer
 from .models import Post, Comment
 
 

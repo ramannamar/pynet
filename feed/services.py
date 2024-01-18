@@ -1,5 +1,5 @@
 from django.conf import settings
-from Pynet.wall.models import Post
+from wall.models import Post
 
 
 class Feed:

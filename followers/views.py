@@ -1,5 +1,5 @@
 from rest_framework import generics, permissions, views, response
-from Pynet.profiles.models import UserNet
+from profiles.models import UserNet
 from .models import Follower
 from .serializers import ListFollowerSerializer
 

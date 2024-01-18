@@ -1,6 +1,6 @@
 from rest_framework import permissions, viewsets, response
 
-from Pynet.wall.serializers import ListPostSerializer, PostSerializer
+from wall.serializers import ListPostSerializer, PostSerializer
 from .services import feed_service
 
 
